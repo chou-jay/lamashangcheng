@@ -1,0 +1,9 @@
+.mall-t-nav{height: 2rem;position: fixed;top: 0;z-index: 999;background: white;width: 100%}
+.mall-t-nav span:nth-child(2){float: right;margin-right:9rem;line-height: 2rem }
+.mall-t-main ul{width: 49%;float: left;border: 2px #eee solid}
+.mall-t-main li{}
+.mall-t-main li:nth-child(1){width: 50%;height: 8rem}
+.mall-t-main li:nth-child(1) img{width: 100%;height: 100%;text-align: center;display: inline-block;margin-left: 2rem }
+.mall-t-main li:nth-child(2){display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; overflow: hidden;}
+.card-main-t{text-decoration: line-through}
+.card-main-tt{display: inline-block;float: right;}

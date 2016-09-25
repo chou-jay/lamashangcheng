@@ -1,0 +1,16 @@
+.sellgirl-nav li{float: left;width:20%;margin: 0.3rem 0 0 0 ;height: 2rem;text-align: center;background: white}
+.sellgirl-nav li p{display: inline-block;margin: 0.3rem 0 0 0 ;font-size: 0.7rem}
+.sellgirl-nav li img{width: 0.7rem;height: 0.7rem}
+.sellgirl-top-one{height: 2rem;width: 16rem;margin: 0.3rem  0;position: relative;}
+.sellgirl-top-one span:nth-child(2){font-size: 1rem;width: 80%;display: inline-block;text-align: center;}
+.sellgirl-topTwo{width: 16rem;height: 8rem}
+img{width: 100%;height: 100%}
+.sellgirl-main{width: 100%;height: 8rem;position: relative;border-bottom: 1px solid #eee}
+.sellgirl-main p{font-size: 0.5rem}
+.sellgirl-main p:nth-child(1){width: 6rem;margin: 1rem 0 0 0}
+.sellgirl-main p:nth-child(2){position: absolute;top: 1rem;left: 7rem}
+.sellgirl-main p:nth-child(3){position: absolute;top: 3rem;left: 7rem}
+.sellgirl-main p:nth-child(4){position: absolute;top: 5rem;left: 7rem}
+.sellgirl-main p:nth-child(5){position: absolute;top: 5rem;left: 9rem;text-decoration: line-through}
+.sellgirl-main p:nth-child(6){position: absolute;top: 5rem;right: 1rem}
+.goodsname{display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;}

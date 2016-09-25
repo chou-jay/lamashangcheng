@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/mall-two.css"/>
+    <script src="../lib/angular.js"></script>
+</head>
+<body ng-app="myGg" ng-controller="myGurl">
+    <div class="mall-t-nav">
+        <a href="javascript:history.go(-1)"><span class="iconfont" style="font-size: 1.5rem"> &#xe61a;</span></a>
+
+        <span>{{resadd.special.spec_name}}</span>
+    </div>
+    <div ng-repeat="x in goods" class="mall-t-main">
+        <a href="/html/detile.html?red?56247">
+            <ul>
+                <li class="mall-t-img">
+
+                    <img ng-src={{x.goods_thumb}} alt="">
+
+                </li>
+                <li>
+                    <p>{{x.goods_name}}</p>
+                </li>
+                <li>
+                    <span>￥{{x.shop_price}}</span>
+                    <span class="card-main-t">￥{{x.market_price}}</span>
+                    <span class="card-main-tt">{{x.praise}}折</span>
+                </li>
+            </ul>
+        </a>
+    </div>
+
+</body>
+<script src="../script/mall-two.js"></script>
+</html>

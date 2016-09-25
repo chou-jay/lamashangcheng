@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>地址</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+    <script src="../lib/angular.js"></script>
+    <!--<link type="text/css" href="../css/address.css">-->
+    <style>
+        #address1{
+            font-size: 0.6rem;
+            padding: 1rem;
+        }
+        #address1 table  tr td:first-child{
+            width:35%;
+
+        }
+        #address1 .top{
+            width:60%;
+
+        }
+        #address1 .top  a{
+            font-size: 1rem;
+        }
+        #address1 .right{
+            float: right;
+            line-height: 1rem;
+        }
+        #address1 tr {
+
+            height: 2.7rem;
+            line-height: 1.3rem;
+        }
+        .strore{
+            border: 0.05rem solid gray;
+            position: fixed;
+            bottom:0;
+            width:100%;
+            height: 2rem;
+            line-height:2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body ng-app="addressApp"  ng-controller = "addresCtrl">
+<div id="address1">
+
+    <div  class="top"><a href="javascript:history.go(-1)"> <  </a><div class="right">填写地址</div></div>
+    <form action="#">
+        <table>
+            <tr>
+                <td>收货人</td>
+                <td>  <input type="text"    ng-model="addr" placeholder="请输入收货地址"/> </td>
+            </tr>
+
+            <tr>
+                <td>联系电话</td>
+                <td>  <input type="text"   ng-model="phone1"  placeholder="请输入手机号码">  </td>
+            </tr>
+
+            <tr>
+                <td>所在地区</td>
+                <td>
+                    <input type="text" placeholder="北京" ng-model="town">
+                    <input type="text" placeholder="北京市" ng-model="townshi">
+                    <input type="text" placeholder="东城区" ng-model="townqu" >
+                </td>
+            </tr>
+            <tr>
+                <td>详细地址</td>
+                <td>
+                    <input type="text" placeholder="请填写详细地址" ng-model="xiangxi">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+</div>
+<div class="strore" ng-click = "cun()">保存</div>
+</body>
+<script>
+
+    document.documentElement.style.fontSize = innerWidth /16 +'px'
+    window.onresize = function(){
+        document.documentElement.style.fontSize = innerWidth /16 +'px'
+    }
+
+
+    var addressApp =  angular.module('addressApp',[]);
+
+    addressApp.controller('addresCtrl',function ($scope) {
+
+        $scope.addr= '';
+        $scope.phone1 = '';
+        $scope.town = '';
+        $scope.townshi = '';
+        $scope.townqu ='';
+        $scope.xiangxi = '';
+        $scope.cun = function () {
+            var  addrObj = {};
+            addrObj.ming = $scope.addr;
+            addrObj.phone = $scope.phone1;
+            addrObj.detile = $scope.town +$scope.townshi +$scope.townqu + $scope.xiangxi;
+
+            console.log(addrObj);
+            var stringAddr = JSON.stringify(addrObj);
+            localStorage.setItem('address',stringAddr);
+            var getAddr = localStorage.getItem('address');
+            console.log(getAddr);
+            location.href = '../index.html#/card';
+
+        }
+
+    })
+</script>
+</html>

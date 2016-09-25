@@ -1,0 +1,65 @@
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+
+
+<div id="wrapper" >
+
+
+
+	<section class="card-top">
+		<p>
+			购物车
+		</p>
+		<span id="card-top-right" >
+	   		编辑
+	   	</span>
+	</section>
+	<div class="kong" >
+
+		<!--空数据时不显示数据-->
+		<section class="card-main" ng-show="false">
+			<p >
+				<img src="../img/card-gg.png">
+			</p>
+			<p>这里是空的呢</p>
+			<a href="../index.html"  ><button class="card-main-gg">去逛逛</button></a>
+		</section>
+
+		<!--有数据-->
+		<div class="card-xx">
+			<ul >
+				<li>
+					<input type="radio" class="yuan four_car" />
+					<img class="four_car" ng-src="{{goods1.goods_thumb}}" alt="" >
+					<p class="text four_car">{{goods1.goods_name}}</p>
+					<div class="num_right four_car">
+						<p>{{goods1.price}}</p>
+						<input type="text" value="1" class="xiala" ng-model="goods1.count">
+					</div>
+				</li>
+
+			</ul>
+		</div>
+
+
+
+		<section class="card-bottom">
+			<input type="checkbox" class="card-bottom-qx" />
+			<span class="card-bottom-sp" style="font-size: 1rem;">全选 </span>
+			<p>
+				<input type="button"  value="结算"  class="card-bottom-js"/>
+			</p>
+			<p>
+			<p style="float: right;">￥0.00</p>
+			<p>合计</p>
+
+			</p>
+		</section>
+	</div>
+
+
+
+
+
+</div>

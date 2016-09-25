@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../css/purchase.css">
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/purchase.css">
+	<script src="../lib/angular.js"></script>
+	<script type="text/javascript" src='../lib/swiper.min.js'></script>
+</head>
+    <script src='../lib/angular.js'></script>
+    <title>Title</title>
+    <script src=""></script>
+</head>
+<body ng-app = "detileApp" ng-controller="detileCtrl">
+	<div class="detile-top">
+		<a href="javascript:history.go(-1)">
+			<section class="iconfont">&#xe61a;</section>
+		</a>
+		<a href="../index.html">
+			<section>
+				<img src="../img/purchase-home.png">
+			</section>
+		</a>		
+		<section>
+			<img src="../img/purchase-fenxing.png">
+		</section>
+	</div>
+	<!--轮播图-->
+	<div class="swiper-container">
+	 	<div class="swiper-wrapper" >
+		      <div class="swiper-slide">
+		      		<img ng-src="{{thirdArr.goods_thumb}}">
+		      </div>	     
+		</div>
+			<!-- 如果需要分页器 -->
+		<div class="swiper-pagination">
+		</div>
+	</div>
+	<div class="detile-main">
+		 <span>￥{{thirdArr.shop_price}}</span>
+         <span>￥{{thirdArr.market_price}}</span>
+         <p>{{thirdArr.goods_name}}</p>
+	</div>
+	<div class="detile-main-one">
+		<li>
+			<span class="detile-main-o-img">
+				<img src="../img/puraa.png">
+			</span>
+			<span>邮费40元起</span>
+			<span class="detile-main-o-img">
+				<img src="../img/puraa.png">
+			</span>
+			<span>品牌供应商发货</span>
+		</li>
+		<li>
+			<p class="datacss">{{thirdArr.business_type}}</p>
+		</li>
+		<li>
+			<span>好评</span>
+			<span style="color: deeppink">好评{{thirdArr.praise}}</span>
+		</li>
+		<li>
+			<span class="detile-main-o-img">
+				<img src="../img/zhengpin.png">
+			</span>
+
+			<span>正品保证</span>
+			<span class="detile-main-o-img">
+				<img src="../img/7tian.png">
+			</span>
+			<span>7天内退换货</span>
+		</li>
+	</div>
+	<div class="detile-footer" >
+		<button ng-click="buy()" >立即购买</button>
+		<button ng-click="buycar()">加入购物车</button>
+		<div style=" background:#735660"><sapn class="iconfont"  style="padding-left: 1.4rem; background:#735660">&#xe602;</sapn></div>
+
+	</div>
+
+
+	<!--点击事件div-->
+	<div class="tapBlock" ng-show="show">
+		<ul>
+			<li>
+				<img src="{{thirdArr.goods_thumb}}" alt="">
+				<div class="center">
+					<p ng-bind="thirdArr.goods_name"></p>
+					<span >￥<sapn ng-bind="thirdArr.shop_price"></sapn></span>
+				</div>
+				<div class="error" ng-click = "close()">X</div>
+			</li>
+			<li>
+				<p>规格</p>
+				<p>默认</p>
+			</li>
+			<li class="num">
+				<p>数量</p>
+				<div class="input" > <input type="button" ng-click="jian()" value="-"> <input type="text" value={{count}}>
+					<input type="button" value="+" ng-click="add()"></div>
+
+			</li>
+			<li><p class="jie">结算</p></li>
+
+		</ul>
+	</div>
+</body>
+
+<script  src="../script/detile.js"></script>
+<script type="text/javascript">
+		window.onload = function() {
+		  var mySwiper = new Swiper('.swiper-container',{
+		    loop: true,
+		    //其他设置
+		 	autoplay:1000,
+		 	pagination: '.swiper-pagination',
+		  });  
+		}
+
+	</script>
+</html>

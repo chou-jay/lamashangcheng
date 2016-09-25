@@ -1,0 +1,33 @@
+.detile{width: 100% ;}
+.detile-top{height: 2.3rem ;line-height:2.3rem}
+.detile-top  section:nth-child(1){float: left}
+.detile-top section:nth-child(3){float: right;}
+.detile-top section img{height: 100%;margin-top: 0.2rem;width: 2rem}
+
+.swiper-wrapper{width: 100%;height: 17rem}
+.swiper-slide{width: 100%}
+.swiper-wrapper img{width: 100%;height: 100%}
+.detile-main p{text-align: center}
+.detile-main span{margin:  0 0 0 1rem;display: inline-block}
+.detile-main span:nth-child(1){font-size: 2rem}
+.detile-main span:nth-child(2){text-decoration: line-through}
+.detile-main-one li{margin: 0.5rem  0 0.5rem 0.5rem;}
+.detile-main-o-img{width:1rem;white:0.5rem;display:inline-block }
+.detile-main-o-img img{width: 100%;height: 100%}
+.detile-footer button{width:40%;height: 3rem;color: white;border: none;}
+.detile-footer button:nth-child(1){background: gold}
+.detile-footer button:nth-child(2){background: deeppink}
+.datacss{display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;}
+.detile-footer{position: fixed; bottom:0;left: 0; width:100%;height: 3rem; display: block}
+.detile-footer button{float: left}
+.detile-footer .iconfont{ width:20%; height: 3rem;line-height: 3rem;text-align: center;margin:0 auto;}
+.tapBlock {position: fixed;bottom:4rem;left: 0; width:100%;background: white;z-index: 1111}
+.tapBlock li{border-bottom: 0.1rem solid gainsboro;height: 6.7em;padding: 1.4rem 1rem}
+.tapBlock li:first-child img{ width:3rem;height: 3rem ;float: left}
+.tapBlock li:first-child .center{ width:10rem;height: 3rem ;float: left;padding: 0rem 1rem ; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; overflow: hidden;}
+.tapBlock li:nth-child(2) p:last-child{ color: white;margin-left: 1rem;margin-top: 0.5rem; background:#FC6496;width:1.5rem}
+/*.tapBlock .error{line-height: 3rem;height: 3rem;width:1rem; float: left;text-align: right}*/
+.error{float: right;line-height: 3rem;font-size: 1rem;}
+.num input{width:1.3rem;height: 1.3rem;float: left;}
+.input {margin-left: 2rem}
+.jie{padding: 1rem;background: peachpuff;width: 100%;text-align: center}
