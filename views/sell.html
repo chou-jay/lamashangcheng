@@ -1,0 +1,123 @@
+
+<link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="./css/sell.css">
+<section class="sell_stTop">
+	<h1>辣妈商城</h1>
+	<div class="iconfont" ng-click="myClick()">&#xe612;</div>
+</section>
+
+
+<!-- <div class="swiper-container" >
+	 <div class="swiper-wrapper" ng-repeat="x in arr1">
+	 <img ng-src="{{x.banner}}" alt="">
+	 
+	 </div> -->
+	    <!-- 如果需要分页器 -->
+	  <!-- <div class="swiper-pagination" id="text"></div>   -->
+<!-- </div> -->
+ <div class="myslides" >
+    <ks-swiper-container loop="true"  direction:'vertical' pagination: '.swiper-pagination' slides-per-column="1" autoplayDisableOnInteraction : false, autoplay="1000"  pagination-is-active="false" swiper="swiper" initial-slide="0"  on-ready="onReadySwiper(swiper)">
+        <ks-swiper-slide ng-repeat="s in arr1">
+            <img ng-src="{{s.banner}}">
+        </ks-swiper-slide>
+      
+         <ks-swiper-pagination ></ks-swiper-pagination>	
+    </ks-swiper-container>
+
+
+</div>
+
+<div class="sell_division">
+	<ul>
+		<li>
+			<a href="#"><img src="./img/ecloD1fg-P6AaHe3AAAOGKd1UL8529.png"><p>9.9元专区</p></a>
+		</li>
+		<li>
+			<a href="#"><img src="./img/ecloD1fg-SGAO74-AABF8YUeijs911.png"><p>玩具专区</p></a>
+		</li>
+		<li>
+			<a href="#"><img src="./img/DpgiA1fg-ryAf6BwAABDoOxp5Tg323.png"><p>美妆专区</p></a>
+		</li>
+		<li>
+			<a href="#"><img src="./img/ecloA1dQ7zKAZwmvAAAH9eM8LII665.png"><p>保税专区</p></a>
+		</li>
+		<li>
+			<a href="#"><img src="./img/ecloA1fg-tWAEDf_AABHUQoUf9I592.png"><p>直邮专区</p></a>
+		</li>
+	</ul>
+</div>
+
+
+<div class="slide">
+	<ul class="slideUl">
+		<!-- 指令 -->
+		<slide-follow id="slide" dataset-data = "datasetData"></slide-follow>
+	</ul>
+</div>
+
+<div class="sell_time">
+	
+	<p>&nbsp;&nbsp;每日一秒&nbsp;&nbsp;{{time | date:'hh:mm:ss'}}</p>
+	<div><span>16:00</span>&nbsp;&nbsp;<span>21:00</span></div>
+</div>
+
+
+<div class="sell_miaosha">
+	<div class="miaosha_left">
+		<img src="./img/2.jpg" alt="" />
+		<p>￥119 4折</p>
+	</div>
+	<div class="miaosha_center">
+		<img src="./img/1.jpg" alt="" />
+		<p>￥10.9 2.3折</p>
+	</div>
+	<div class="miaosha_right">
+		<img src="./img/ecloA1fNDG6AOXLtAAR0E40oOCk754.jpg!c300x300x100.jpg" alt="" />
+		<p>￥29.9 5.1折</p>
+	</div>
+</div>
+
+
+<div class="sell_myUl">
+	<ul>
+		<a href="../html/sellgirl.html">
+			<li ng-repeat="y in arr2">
+				<img src="{{y.banner}}" alt="">
+			</li>
+		</a>
+	</ul>
+</div>
+
+
+<div class="sell_in">
+	<div class="sell_in_top">
+		<div class="iconfont icf_left" ng-click="xiaoyu()" style="font-size: 1.2rem">&#xe61a;</div>
+		
+		<div class="sousuo">
+			<input type="text" />
+			<div class="iconfont icf_right">&#xe612;</div>
+		</div>
+	</div>
+
+	
+	<div class="sell_in_main">
+		<ul class="ul_sort">
+			<li ng-click="click_sort('sell_in');changeColor(0)"  ng-class="{true:'active',false:'inactive'} [sellSort[0]]"><img src="./img/ecloD1fg-P6AaHe3AAAOGKd1UL8529.png"><p>兔税店</p></li>
+			<li ng-click="click_sort('sell_in2');changeColor(1)" ng-class="{true:'active',false:'inactive'} [sellSort[1]]"><img src="./img/ecloD1fg-SGAO74-AABF8YUeijs911.png"><p>直邮百货</p></li>
+			<li><img src="./img/DpgiA1fg-ryAf6BwAABDoOxp5Tg323.png"><p>纸尿裤</p></li>
+			<li><img src="./img/DpgiA1fg-ryAf6BwAABDoOxp5Tg323.png"><p>奶粉</p></li>
+			<li><img src="./img/DpgiA1fg-ryAf6BwAABDoOxp5Tg323.png"><p>婴幼洗护</p></li>
+			<li><img src="./img/DpgiA1fg-ryAf6BwAABDoOxp5Tg323.png"><p>辅食营养</p></li>
+			<li><img src="./img/DpgiA1fg-ryAf6BwAABDoOxp5Tg323.png"><p>喂养用品</p></li>
+			<li><img src="./img/DpgiA1fg-ryAf6BwAABDoOxp5Tg323.png"><p>女性专区</p></li>
+			<li><img src="./img/DpgiA1fg-ryAf6BwAABDoOxp5Tg323.png"><p>儿童玩具</p></li>
+			<li><img src="./img/DpgiA1fg-ryAf6BwAABDoOxp5Tg323.png"><p>食品保健</p></li>
+		</ul>
+
+		<ul class="ul_right">
+			<li ng-repeat="x in arrIn">
+				<img src="{{x.goods_thumb}}">
+			</li>
+		</ul>
+	</div>
+</div>

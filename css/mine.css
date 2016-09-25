@@ -1,0 +1,23 @@
+.mine-q{background: #eeeeee;width: 100%;height: 100%}
+.mine-top{width: 100%;height: 12rem;}
+.mine-top p{font-size: 1rem;}
+.mineTopBg{width: 100%;height: 8rem;background: pink;}
+.mineTopText{margin: 0 0 0.1rem 0.2rem;}
+#mineTopText-p{margin-left:0.2rem;font-size: 0.1rem;color: white }
+.mine-tx{width: 3rem;height: 3rem;border-radius: 50%;margin:0.5rem auto ;overflow: hidden;}
+.mine-tx img{width: 100%;height: 100%;}
+.mine-ding{width: 100%;height: 2rem;background: white;border-bottom: 2px solid #666666;line-height: 2rem;}
+.mine-dingdan{float: right;}
+.mine-huo{background: white;width:100%;height: 6rem}
+.mine-huo li{float: left;width: 20%;text-align: center;}
+.mine-huo-tu{margin: 0.3rem 0  ;}
+#mine-main-tu{margin: 0 0.5rem}
+.mine-one-bottom{height: 0.5rem;width: 100%;background:#eee;clear: both;}
+.mine-two{width: 100%;height:4rem;background:white;}
+.mine-dingdan-sp{width: 4rem;height: 2rem;font-size:0.7rem}
+#mine-right-tu{float: right;margin-right: 0.5rem}
+.mine-two p{line-height: 2rem;}
+.mine-three{height: 6rem;background: white;margin: 0.5rem 0;}
+.mine-three p{line-height: 2rem;}
+.mine-tour{height: 4rem;background: white;margin: 0 0 3rem 0}
+.mine-tour p{line-height: 2rem;}

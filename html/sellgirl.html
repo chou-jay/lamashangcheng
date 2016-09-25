@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../css/sellgirl.css">
+    <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+    <title>Document</title>
+</head>
+<body ng-app = "redApp" ng-controller = "redCtrl">
+<div class="sellgirl-top-one">
+    <a href="javascript:history.go(-1)"><span class="iconfont" style="font-size: 1.5rem;">&#xe61a;</span></a>
+    <span>{{redarr1.spec_name}}</span>
+</div>
+<div class="sellgirl-topTwo">
+    <img ng-src= {{redarr1.banner}}>
+</div>
+<div class="sellgirl-nav">
+    <ul>
+        <li>
+            <p>
+                <input id='g1o3' name="group1" value="option3" type="radio">
+                <label for='g1o3'>有货</label>
+            </p>
+
+        </li>
+        <li ng-click = "moods()">
+            <p>人气</p>
+        </li>
+        <li ng-click = "pircre()">
+            <img src="../img/sellgirltt.png">
+            <p>价格</p>
+        </li>
+        <li>
+            <img src="../img/sellgirlsx.png">
+            <p>筛选</p>
+        </li>
+        <li>
+            <p><img src="../img/sellgirlff.png"></p>
+        </li>
+    </ul>
+</div>
+<div ng-repeat="x in redarr">
+    <ul class="sellgirl-main">
+        <a href="detile.html?{{urlstart}}?{{x.goods_id}} " >
+            <li>
+                <p><img src={{x.goods_thumb}}></p>
+                <p class="goodsname">{{x.goods_name}}</p>
+                <p>已售{{x.sold_number}}件</p>
+                <p>￥{{x.shop_price}}</p>
+                <p>￥{{x.market_price}}</p>
+                <p>{{x.discount}}折</p>
+            </li>
+        </a>
+    </ul>
+</div>
+</body>
+<script src="../script/red.js"></script>
+<script>
+    document.documentElement.style.fontSize = innerWidth /16 +'px'
+    window.onresize = function(){
+        document.documentElement.style.fontSize = innerWidth /16 +'px'
+    }
+
+</script>
+</html>

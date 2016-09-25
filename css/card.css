@@ -1,0 +1,21 @@
+.card-top{height: 3rem;border-bottom: 1px solid black;}
+.card-top p{text-align: center;width: 100%;line-height: 3rem;font-size: 1rem;}
+#card-top-right{position:absolute;top: 1rem;display: block;right: 0.3rem;font-size: 0.7rem;width: 2rem;height:1rem}
+.card-main{height: 20rem;background:rgb(246,246,246);text-align: center;}
+.card-main p:nth-child(1){padding: 4rem 0 0 0;line-height: 5rem}
+.card-main p:nth-child(2){font-size: 0.5rem;}
+.card-main-gg{width: 4rem;height: 2rem;background: #FF6F84;color: white;font-size: 1rem;border-radius: 1rem;margin: 1rem 0 0 0 ;border: none}
+.card-bottom{margin-bottom: 3.5rem ;position: fixed;bottom: 0; width:100%;}
+.card-bottom p{float: right;}
+.card-bottom-qx{width: 1rem;height: 1rem;}
+.card-bottom-js{width: 4rem;height: 2rem;background: #FF6F84;border-radius: 1rem;border:none;
+		font-size: 1rem;color: white;margin: 0.2rem;}
+/*p{font-size: 1rem;}*/
+
+.card-xx{width:100%;height: 4.3rem;}
+.card-xx li{width: 100%;height: 4.3rem;padding-top: 0.6rem;}
+.card-xx li .four_car{float: left;margin-left: 1rem;}
+.card-xx li .yuan{width: 1rem;height: 1rem;border-radius: 50%;border: 0.05rem solid #E5E5E5;}
+.card-xx li img{width: 2.5rem;height: 2.5rem;}
+.card-xx li .text{width: 6rem;font-size: 0.6rem}
+.card-xx li .num_right input{width: 1.8rem;border-radius: 0.5rem;height: 1.1rem;outline: none;}

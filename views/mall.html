@@ -1,0 +1,37 @@
+
+<div class="mallhead" ng-bind="head" ></div>
+<div class="mallconsend">
+    <ul>
+        <a href="../html/sellgirl.html?good=red">
+            <li> <img ng-src="../img/mall01.png" alt=""><p>姨妈巾区</p> </li>
+
+        </a>
+        <a href="../html/sellgirl.html?good=Japan">
+            <li> <img ng-src="../img/mall02.png" alt=""> <p>日本直邮</p> </li>
+
+        </a>
+        <a href="../html/sellgirl.html?good=milk">
+            <li> <img src="../img/mall03.png" alt=""><p>奶瓶专区</p> </li>
+
+        </a>
+        <a href="../html/sellgirl.html?good=skin">
+            <li> <img src="../img/mall04.png" alt=""> <p>个护美妆</p> </li>
+
+        </a>
+    </ul>
+</div>
+
+<div class="mallThird">
+    <div class="mallThird_one">
+        <p>1F  辣妈美妆</p>
+        <ul class="ul_one">
+            <li ng-repeat="x in arr"><a href="#"><img data-ui-lazyload="{{x.banner}}" class="lazy"/></a></li>
+        </ul>
+    </div>
+    <div class="mallThird_two">
+        <p>2F  品质奶粉</p>
+        <ul class="ul_two">
+            <li ng-repeat="x in arr"><a href="#"><img data-ui-lazyload="{{x.banner}}" class="lazy"/></a></li>
+        </ul>
+    </div>
+</div>

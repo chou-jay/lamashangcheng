@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/logo.css"/>
+	<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>	
+<body ng-app="loginApp" ng-controller = "loginCtrl">
+	<div id="logo-main">
+		<section class="logo-top">
+			<span class="iconfont" style="font-size: 2rem">&#xe61a;</span>
+			<span class="logo-top-tt">
+				<p>
+					<span class="logo-top-dl">{{name}}</span>
+					<span>注册</span>
+				</p>
+			</span>
+		</section>
+		<section class="logo-main">
+			<ul>
+				<li>
+					<div class="iconfont" style="font-size: 3rem;color: green;" id="logo-du">
+						&#xe616;
+					</div>
+					<div>
+						<input type="text"  ng-model="username"  name="username" placeholder="请输入用户名"/>
+						<ladel for='username'></ladel>
+					</div>
+				</li>
+				<li>
+					<div class="iconfont" style="font-size: 3rem;color: cornflowerblue;" id="logo-du">
+						&#xe618;
+					</div>
+					<div>
+						<input type="text"   ng-model = "pwd" name="password" placeholder="请输入密码"/>
+						<ladel for='password'></ladel>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<section class="logo-bottom">
+			<p class="logo-bottom-one">
+				<a href="#" ng-click ="register()">登录</a>
+			</p>
+			
+			<p>通过第三方登录</p>
+			<p class="iconfont" style="color: dodgerblue;font-size: 3rem;">&#xe613;</p>
+		</section>
+	</div>
+
+</body>
+	<script>
+		var loginApp = angular.module('loginApp',[]);
+		loginApp.controller('loginCtrl',function ($scope,$http) {
+			$scope.name = '登录';
+
+			$scope.register = function () {
+				if ($scope.username =='lama' &&  $scope.pwd == 123456){
+
+						location.href = "http://127.0.0.1:8080/index.html";
+						$scope.name = '辣妈';
+
+				} else{
+					console.log('2');
+				}
+
+			}
+		});
+
+	</script>
+</html>

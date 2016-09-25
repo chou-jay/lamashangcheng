@@ -1,0 +1,55 @@
+{
+	"list": [
+		{
+		"spec_id": "12291",
+		"spec_name": "缤纷初秋 199-20",
+		"banner": "http://s07.lmbang.com/M00/EA/6D/ecloD1fff3yANaneAAOaiBID3-M755.jpg",
+		"start_time": "1474336800",
+		"end_time": "1474595999",
+		"hits": "1025",
+		"remind_num": "0",
+		"discount": "4.8",
+		"typeid": "0",
+		"ad_link": "",
+		"sold_total_nums": "14317",
+		"sortnum": 458,
+		"notice": "剩1天",
+		"is_remind": "0",
+		"is_start": "1"
+		},
+		{
+		"spec_id": "12281",
+		"spec_name": "十一出游好帮手·Heine",
+		"banner": "http://s03.lmbang.com/M00/EA/2F/ecloD1feWEGAK3VzAAQeWajnhDk380.jpg",
+		"start_time": "1474336800",
+		"end_time": "1474595999",
+		"hits": "580",
+		"remind_num": "0",
+		"discount": "3.0",
+		"typeid": "0",
+		"ad_link": "",
+		"sold_total_nums": "2156",
+		"sortnum": 453,
+		"notice": "剩1天",
+		"is_remind": "0",
+		"is_start": "1"
+		},
+		{
+		"spec_id": "12311",
+		"spec_name": "叮唛萌宝新风尚专场",
+		"banner": "http://s07.lmbang.com/M00/F1/5C/ecloA1fg0_eAUICwAANG6v-HFPI393.jpg",
+		"start_time": "1474423200",
+		"end_time": "1474682399",
+		"hits": "457",
+		"remind_num": "0",
+		"discount": "2.2",
+		"typeid": "0",
+		"ad_link": "",
+		"sold_total_nums": "3108",
+		"sortnum": 452,
+		"notice": "剩2天",
+		"is_remind": "0",
+		"is_start": "1"
+		}
+	]
+}
