@@ -4,13 +4,14 @@
 .detile-top section:nth-child(3){float: right;}
 .detile-top section img{height: 100%;margin-top: 0.2rem;width: 2rem}
 
-.swiper-wrapper{width: 100%;height: 14rem}
+.swiper-wrapper{width: 100%;height: 18rem}
+
 .swiper-wrapper img{width: 100%;height: 100%}
-.detile-main p{text-align: center}
+.detile-main p{width: 100%;margin: 0 0.2rem;border-bottom: 2px solid #eee;color: #A18E95}
 .detile-main span{margin:  0 0 0 1rem;display: inline-block}
 .detile-main span:nth-child(1){font-size: 2rem}
 .detile-main span:nth-child(2){text-decoration: line-through}
-.detile-main-one li{margin: 0.5rem  0 0.5rem 0.5rem;}
+.detile-main-one li{margin: 0.5rem  0 0.5rem 0.5rem;border-bottom:2px solid #eee;vertical-align: middle; }
 .detile-main-o-img{width:1rem;white:0.5rem;display:inline-block }
 .detile-main-o-img img{width: 100%;height: 100%}
 .detile-footer button{width:40%;height: 3rem;color: white;border: none;}
